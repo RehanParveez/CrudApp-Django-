@@ -1,0 +1,10 @@
+{% extends 'Prophet/parent.html' %}{% block content %}
+
+<h2>Learner Detail</h2>
+<ul class="list-group">
+<li class="list-group-item"><strong>Name:</strong> {{ learner.name }}</li>
+<li class="list-group-item"><strong>Email:</strong> {{ learner.email }}</li>
+<li class="list-group-item"><strong>Roll:</strong> {{learner.roll }}</li>
+</ul>
+<a href="{% url 'list' %}" class="btn btn-secondary mt-3">Back to List</a>
+{% endblock %}
