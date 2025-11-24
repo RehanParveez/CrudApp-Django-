@@ -48,7 +48,7 @@ name="{{ form.roll.name }}"
 id="{{ form.roll.id_for_label }}"
 value="{{ form.roll.value|default_if_none:'' }}"
 class="form-control"
-placeholder="Enter Your Roll Number"
+placeholder="Enter Your Roll Number">
 {% if form.roll.errors %}
 <div class="text-danger mt-1">
 {% for error in form.roll.errors %}
